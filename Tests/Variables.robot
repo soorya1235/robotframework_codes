@@ -16,7 +16,7 @@ Verify Successful Login to OrangeHRM
     Wait Until Element Is Visible  id:txtUsername  timeout=5
     Input Text  id:txtUsername  ${UserNameHRM}
     Input Password  id:txtPassword  ${PasswordHRM}
-    Click Element  id:btnLogin
+    Click Element  id:btnLogincls
     Element Should Be Visible  ${VisibleElements}[OrangeHRM]  timeout=5
     Close Browser
 
